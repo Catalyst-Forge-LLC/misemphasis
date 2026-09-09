@@ -24,7 +24,7 @@ Text has no intonation. A silent reader supplies one. It may not be yours.
 | **cancel** | Postpone, don't cancel |
 | **Friday** | Another day |
 
-Seven words. Seven claims. Flat text ships all of them.
+Seven words. Seven claims. Flat text ships all of them. [Why this sentence](/about).
 
 ## What you get
 

@@ -65,6 +65,6 @@ Grammar, tone, AI-smell spraying, structural tangles, automatic rewrite, multi-f
 
 ## Recent Changes
 
-- 2026-09-09: Teaching sentence is *I didn't say we should cancel Friday.* Source of the seven-stress trick: https://x.com/Rainmaker1973/status/2097696528165179723
+- 2026-09-09: Teaching sentence is *I didn't say we should cancel Friday.* About credits Rachel Rooney, *What I Really Mean*, *The Language of Cat* (2011), plus the Massimo clip; we use our own example.
 - 2026-09-09: Smell Check pass on the site. Overlay in `docs/smellcheck.md`. Hero no longer inventories npm, domain, or siblings.
 - 2026-09-09: Phase 1 locked. Phase 2 spine: skill, catalog, FilePress site, fixture.

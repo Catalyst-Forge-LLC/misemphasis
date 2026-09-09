@@ -56,6 +56,11 @@ test("public copy names the product and the classic sentence", () => {
 	assert.match(readme, /installable writing skill/i);
 	assert.match(readme, /Nothing scans the tree/);
 	assert.doesNotMatch(home, /npx misemphasis/);
+	const about = readFileSync(join(packageRoot, "site", "pages", "about.md"), "utf8");
+	assert.match(about, /Rachel Rooney/);
+	assert.match(about, /What I Really Mean/);
+	assert.match(about, /The Language of Cat/);
+	assert.doesNotMatch(about, /stole my money/);
 });
 
 test("docs nav has a markdown file for every item", () => {
