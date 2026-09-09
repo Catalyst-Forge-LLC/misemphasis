@@ -1,0 +1,262 @@
+{
+  "project": {
+    "name": "Misemphasis",
+    "created": "2026-09-09",
+    "description": "Identify how a given piece of prose could be misunderstood when intonation or word-level emphasis is missing, and suggest wording that locks the intended reading. Sibling of Smell Check and Detangler.",
+    "archetype": "product",
+    "status": "active"
+  },
+  "agentContext": {
+    "primaryAgent": "cursor-agent",
+    "supportsSubagents": true,
+    "supportsPlanMode": true
+  },
+  "currentPhase": "2-scaffolding",
+  "phases": {
+    "1-architecture": {
+      "status": "completed",
+      "startedAt": "2026-09-09T13:37:00",
+      "completedAt": "2026-09-09T13:42:00",
+      "exitCriteriaMet": [
+        "Tech choices confirmed",
+        "Folder structure confirmed",
+        "Data model shape confirmed",
+        "First feature batch defined",
+        "Claude's understanding verified by user",
+        "PHASE_1_BRIEF.md created, complete, and locked (docs/)",
+        "Major decisions recorded in workflow_tracking.json decisions[]"
+      ],
+      "exitCriteriaRemaining": [],
+      "notes": [
+        {
+          "timestamp": "2026-09-09T13:37:00",
+          "text": "Greenfield kickoff. Inspiration: intonation-changes-meaning (seven-stress demonstration). Family: Smell Check + Detangler. Teaching sentence: I didn't say we should cancel Friday."
+        },
+        {
+          "timestamp": "2026-09-09T13:40:00",
+          "text": "User locked names: domain misemphasis.com, npm misemphasis, GitHub Catalyst-Forge-LLC/misemphasis (private, empty)."
+        },
+        {
+          "timestamp": "2026-09-09T13:42:00",
+          "text": "User said build it. Locked sibling-parity brief and moved to Phase 2."
+        }
+      ]
+    },
+    "2-scaffolding": {
+      "status": "in_progress",
+      "startedAt": "2026-09-09T13:42:00",
+      "completedAt": null,
+      "exitCriteriaMet": [
+        "Catalog tests pass (pnpm test)",
+        "FilePress site builds (pnpm site:build)",
+        "Hero flow exists: skill writes report.md from a fixture",
+        "CONTEXT_PROMPT.md created and populated by merging PHASE_1_BRIEF.md",
+        "README.md created",
+        "TODO.md created (seeded from PHASE_1_BRIEF §11)",
+        "IDEAS.md created",
+        "Phase 2 doc scope only (no premature extra templates)"
+      ],
+      "exitCriteriaRemaining": [],
+      "notes": [
+        {
+          "timestamp": "2026-09-09T17:48:00",
+          "text": "Spine up: skill, catalog tests, FilePress site on 5200, sample report. Waiting to mark Phase 2 complete."
+        }
+      ]
+    },
+    "3-stabilization": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "Site preview serves without infrastructure errors",
+        "Skill zip downloads from the built site",
+        "Error messages are human-readable when lease or FilePress is missing"
+      ],
+      "notes": []
+    },
+    "4-feature-iteration": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "Core value proposition delivered",
+        "Hero flow works with real prose including edge cases",
+        "Features tested beyond happy path"
+      ],
+      "notes": [],
+      "iterations": []
+    },
+    "5-refactoring": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "No file exceeds ~500 lines without justification",
+        "Shared utilities extracted",
+        "No duplicated patterns",
+        "Build passes after each refactor"
+      ],
+      "notes": []
+    },
+    "6-strategic-review": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "BRAND_AND_PRODUCT.md created (from ForgeTrail template)",
+        "TODO reorganized by brand value pillars",
+        "Features mapped to brand pillars",
+        "Gap between brand promise and product identified",
+        "IDEAS.md processed into TODO",
+        "Build order decided"
+      ],
+      "notes": []
+    },
+    "7-hardening": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "CODE_QUALITY.md produced (from ForgeTrail template) and critical findings fixed",
+        "BLACK_HAT_REPORT.md produced (via ForgeTrail security audit) and critical/high findings fixed",
+        "All findings triaged into TODO.md with P0/P1/P2 priority",
+        "No silent failures in core workflows (grep for empty catch blocks)",
+        "DEPLOYMENT.md created (from ForgeTrail template)",
+        "TEST_PLAN.md complete or extended (from ForgeTrail template)",
+        "TECHNICAL_REFERENCE.md complete and current",
+        "Docs alignment audit passed (via ForgeTrail docs-alignment audit)",
+        "All documentation consolidated and cross-referenced"
+      ],
+      "notes": []
+    }
+  },
+  "decisions": [
+    {
+      "id": "d1",
+      "timestamp": "2026-09-09T13:40:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "Product names: npm misemphasis, site misemphasis.com, GitHub Catalyst-Forge-LLC/misemphasis.",
+      "rationale": "User reserved the npm name and domain and created the org repo. Same shelf as Smell Check and Detangler.",
+      "alternatives_considered": ["Different npm scope", "GitHub under a personal account"],
+      "status": "active"
+    },
+    {
+      "id": "d2",
+      "timestamp": "2026-09-09T13:42:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "Skill is the product. No CLI. npm ships the skill folder plus a TypeScript path catalog.",
+      "rationale": "User asked for a sibling of Smell Check and Detangler. The report is agent behavior.",
+      "alternatives_considered": ["CLI that calls a model", "Web app with paste box and accounts"],
+      "status": "active"
+    },
+    {
+      "id": "d3",
+      "timestamp": "2026-09-09T13:42:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "No PocketBase, no auth, no accounts. Local files only.",
+      "rationale": "State is the user's prose and report.md. Nothing needs to sync across devices.",
+      "alternatives_considered": ["SaaS with upload and accounts", "localStorage web app"],
+      "status": "active"
+    },
+    {
+      "id": "d4",
+      "timestamp": "2026-09-09T13:42:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "TypeScript ESM on Node 20+, pnpm. FilePress site. Cloudflare Pages via pnpm ship.",
+      "rationale": "House language and sibling parity.",
+      "alternatives_considered": ["Python skill only", "SvelteKit app"],
+      "status": "active"
+    },
+    {
+      "id": "d5",
+      "timestamp": "2026-09-09T13:42:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "Phase 2 exit criteria rewritten for a skill + static site instead of web-app CRUD.",
+      "rationale": "Default tracking template assumes a PocketBase web app.",
+      "alternatives_considered": ["Leave CRUD wording and mark N/A later"],
+      "status": "active"
+    },
+    {
+      "id": "d6",
+      "timestamp": "2026-09-09T13:42:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "Pruned Phase 7 auth-flow and payment-flow exit criteria. Revisit if a paid tier appears.",
+      "rationale": "v1 is a free npm package and static site.",
+      "alternatives_considered": ["Keep payment criteria as a reminder"],
+      "status": "active"
+    },
+    {
+      "id": "d7",
+      "timestamp": "2026-09-09T13:42:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "LocalBerth lease is misemphasis-site on 5200. site:dev reads the lease and passes --port to FilePress.",
+      "rationale": "5181 is smellcheck-site, 5182 is ollanet-site, 5199 is detangler-site. Claiming a port without binding FilePress to it is not a lease.",
+      "alternatives_considered": ["Hardcode a sibling port", "Let FilePress pick a random port"],
+      "status": "active"
+    },
+    {
+      "id": "d8",
+      "timestamp": "2026-09-09T13:42:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "v1 is report-only. Apply is designed for but ships later.",
+      "rationale": "Comb first. Trust the report shape before rewriting prose.",
+      "alternatives_considered": ["Ship apply in the same release", "Web form that rewrites in place"],
+      "status": "active"
+    },
+    {
+      "id": "d9",
+      "timestamp": "2026-09-09T13:53:00",
+      "phase": "2-scaffolding",
+      "session": 1,
+      "decision": "Teaching sentence is I didn't say we should cancel Friday. Attribution for the seven-stress trick is the Massimo post; do not use the theft-accusation example as product copy.",
+      "rationale": "User: the classic sentence is controversial and demeaning. Same seven-stress job, workplace-neutral words.",
+      "alternatives_considered": ["Keep the classic sentence with a disclaimer", "Use a screenshot of the classic sentence as the teaching case"],
+      "status": "active"
+    }
+  ],
+  "gotchas": [
+    {
+      "timestamp": "2026-09-09T17:47:00",
+      "phase": "2-scaffolding",
+      "session": 1,
+      "issue": "localberth CLI was not on PATH in the agent shell. ensure-lease warned and FilePress bound 5200 anyway.",
+      "resolution": "Keep the preferred-port fallback. Claim the lease from a shell that has LocalHelm on PATH when a stable fleet port is required.",
+      "category": "tooling"
+    },
+    {
+      "timestamp": "2026-09-09T17:46:00",
+      "phase": "2-scaffolding",
+      "session": 1,
+      "issue": "filepress build failed with ENOENT on site/posts when the folder was missing.",
+      "resolution": "Ship at least one post (seven-words.md). An empty posts directory is not enough if FilePress still scans it; a missing directory fails the build.",
+      "category": "tooling"
+    }
+  ],
+  "sessions": [
+    {
+      "session": 1,
+      "date": "2026-09-09",
+      "phasesWorked": ["1-architecture", "2-scaffolding"],
+      "accomplished": [
+        "Locked names, brief, and sibling-parity decisions",
+        "Built skill, catalog tests, FilePress site, sample report"
+      ],
+      "leftOff": "Phase 2 spine is up. Ask before marking Phase 2 complete.",
+      "contextLimitHit": false
+    }
+  ]
+}

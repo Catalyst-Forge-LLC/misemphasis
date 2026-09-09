@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Misemphasis">
+	<rect width="128" height="128" rx="28" fill="#1c1916"/>
+	<path
+		d="M18 76 H38 L50 36 L62 92 L74 58 L86 76 H110"
+		fill="none"
+		stroke="#e85d04"
+		stroke-width="7"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	/>
+</svg>
