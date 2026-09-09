@@ -115,4 +115,5 @@ test("install and files pages name the hook and finish the redirects", () => {
 	assert.match(filepress, /href: "\/docs\/install"/);
 	assert.match(filepress, /href: "\/docs\/skill"/);
 	assert.doesNotMatch(filepress, /href: "\/install"/);
+	assert.doesNotMatch(filepress, /href: "\/posts"/);
 });
