@@ -48,4 +48,4 @@ the claim covers.
 ## Do not invent types
 
 If it is not one of these, it is probably grammar, tone, or
-structure. Leave it for another bottle.
+structure. Leave it for another skill.

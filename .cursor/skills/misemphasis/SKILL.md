@@ -55,7 +55,7 @@ or more rewrites that lock distinct readings. No action → drop it.
 
 **Reject.** A clumsy sentence is not a finding. A sentence with
 one obvious reading is not a finding. Grammar, tone, AI smell,
-and structural tangles belong to other bottles. Mention a count
+and structural tangles belong to other skills. Mention a count
 of skipped sentences at the end, or say none. Do not list them.
 
 ## Rules

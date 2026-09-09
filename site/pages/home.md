@@ -46,7 +46,7 @@ A sentence with one obvious reading is not a finding.
 
 ## Not a line editor
 
-Grammar, tone, and structure stay out. [Smell Check](https://smellcheck.dev) sprays unearned language. [Detangler](https://detangler.dev) combs what editing tangled. This bottle is for the reading.
+Grammar, tone, and structure stay out. [Smell Check](https://smellcheck.dev) sprays unearned language. [Detangler](https://detangler.dev) combs what editing tangled. This one is for the reading.
 
 ## Install
 

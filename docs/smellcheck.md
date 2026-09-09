@@ -20,7 +20,6 @@ Do not restate the hard bans. Do not fork `core.md`.
 | --- | --- |
 | emphasis / stress / reading | The job |
 | silent reader | Who supplies the missing pulse |
-| bottle | Family shelf with Smell Check and Detangler |
 | report.md / finding | The deliverable |
 | teaching sentence | The seven-word example |
 
@@ -35,4 +34,4 @@ Do not restate the hard bans. Do not fork `core.md`.
 
 npm, domain, and GitHub belong on About and Install, not in the hero.
 Do not inventory the family as "Sibling of X and Y." Name a sibling
-when you are saying what this bottle is not.
+when you are saying what this skill is not.

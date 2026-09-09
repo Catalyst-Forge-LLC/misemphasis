@@ -30,7 +30,7 @@ Markdown you point an agent at. Nothing scans the tree. v1 has no CLI.
 
 Grammar, tone, and structure stay out. [Smell Check](https://smellcheck.dev)
 sprays unearned language. [Detangler](https://detangler.dev) combs what
-editing tangled. This bottle is for the reading.
+editing tangled. This one is for the reading.
 
 ## Development
 
