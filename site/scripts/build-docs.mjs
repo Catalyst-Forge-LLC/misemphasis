@@ -40,6 +40,7 @@ function inlineFormat(text) {
 	let s = escapeHtml(text);
 	s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
 	s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+	s = s.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<em>$1</em>');
 	s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
 	return s;
 }

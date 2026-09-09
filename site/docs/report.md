@@ -10,7 +10,7 @@ title: Report
 4. Judgment calls
 5. Deferred skips: a count, not the sentences
 
-Every finding has an id, a location, a type, the live readings, the default silent reading, and an action. The action is two or more rewrites that lock distinct readings. Findings without an action are dropped.
+Every finding is its own heading: id, location, type. Then the sentence, the default silent reading, a readings table, and rewrites that lock distinct readings. Findings without an action are dropped.
 
 Severity:
 

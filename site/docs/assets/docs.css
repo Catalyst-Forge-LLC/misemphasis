@@ -202,8 +202,13 @@ a:hover {
 }
 
 .docs-article h3 {
-	margin: 1.5rem 0 0.5rem;
-	font-size: 1.1rem;
+	margin: 2rem 0 0.65rem;
+	padding-top: 1.15rem;
+	border-top: 1px solid var(--docs-rule);
+	font-family: var(--docs-mono);
+	font-size: 0.95rem;
+	font-weight: 600;
+	letter-spacing: -0.01em;
 	scroll-margin-top: 4rem;
 }
 
