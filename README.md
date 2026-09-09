@@ -40,7 +40,8 @@ pnpm test
 pnpm site:dev
 ```
 
-Site (FilePress + docs mount): `pnpm ship`. The maintainer publishes to npm.
+Site (FilePress + docs mount): `pnpm ship`.
+npm: `pnpm publish` (you). There is no `publish` script. `prepublishOnly` runs the tests first.
 Agents must not run `npm publish`.
 
 ## License

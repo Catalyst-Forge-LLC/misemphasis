@@ -20,7 +20,7 @@ Text has no intonation. A silent reader supplies one. It may not be yours.
 | **didn't** | Denial that it was said |
 | **say** | Hinted or implied, not spoken |
 | **we** | They should cancel, not us |
-| **should** | Required, or optional — the modal is the dispute |
+| **should** | Required versus optional |
 | **cancel** | Postpone, don't cancel |
 | **Friday** | Another day |
 
