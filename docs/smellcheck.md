@@ -26,7 +26,7 @@ Do not restate the hard bans. Do not fork `core.md`.
 
 ## Protected lines
 
-- Stress the word you mean.
+- Did the reader stress the word you meant?
 - Earn the word.
 - Spray the prose, not the author.
 - Have you smell-checked that?

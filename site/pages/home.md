@@ -1,5 +1,5 @@
 ---
-title: Stress the word you mean.
+title: Did the reader stress the word you meant?
 description: Find how flat prose can be misread when stress is missing. An agent with the skill writes the report.
 order: 0
 ---

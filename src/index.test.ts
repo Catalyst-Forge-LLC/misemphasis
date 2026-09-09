@@ -49,6 +49,7 @@ test("package ships skills and has no bin", () => {
 test("public copy names the product and the classic sentence", () => {
 	const home = readFileSync(join(packageRoot, "site", "pages", "home.md"), "utf8");
 	const readme = readFileSync(join(packageRoot, "README.md"), "utf8");
+	assert.match(home, /Did the reader stress the word you meant\?/);
 	assert.match(home, /I didn't say we should cancel Friday/);
 	assert.match(home, /Smell Check/);
 	assert.doesNotMatch(home, /Sibling of/);

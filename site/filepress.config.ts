@@ -7,7 +7,7 @@ export default defineFilepressConfig({
 	title: "Misemphasis",
 	description:
 		"Find how flat prose can be misread when stress is missing. An agent with the skill writes the report.",
-	tagline: "Stress the word you mean.",
+	tagline: "Did the reader stress the word you meant?",
 	url: "https://misemphasis.com",
 	author: "Catalyst Forge LLC",
 	logo: "/logo.svg",
