@@ -60,7 +60,8 @@ test("public copy names the product and the classic sentence", () => {
 	assert.match(about, /Rachel Rooney/);
 	assert.match(about, /What I Really Mean/);
 	assert.match(about, /The Language of Cat/);
-	assert.doesNotMatch(about, /stole my money/);
+	assert.match(about, /I didn't say she stole my money/);
+	assert.doesNotMatch(home, /stole my money/);
 });
 
 test("docs nav has a markdown file for every item", () => {
