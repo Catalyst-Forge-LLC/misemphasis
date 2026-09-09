@@ -58,6 +58,8 @@ test("public copy names the product and the classic sentence", () => {
 	assert.match(readme, /Nothing scans the tree/);
 	assert.doesNotMatch(home, /npx misemphasis/);
 	const about = readFileSync(join(packageRoot, "site", "pages", "about.md"), "utf8");
+	assert.match(about, /\*\*Misemphasis\*\* is that miss/);
+	assert.doesNotMatch(about, /## Names/);
 	assert.match(about, /Rachel Rooney/);
 	assert.match(about, /What I Really Mean/);
 	assert.match(about, /The Language of Cat/);

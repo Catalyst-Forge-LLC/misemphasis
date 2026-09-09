@@ -32,6 +32,6 @@ Do not restate the hard bans. Do not fork `core.md`.
 
 ## Genre extras (house law only)
 
-npm, domain, and GitHub belong on About and Install, not in the hero.
+npm, domain, and GitHub belong on Install, not in the hero or About.
 Do not inventory the family as "Sibling of X and Y." Name a sibling
 when you are saying what this skill is not.
