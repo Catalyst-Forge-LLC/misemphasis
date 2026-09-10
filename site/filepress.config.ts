@@ -10,8 +10,8 @@ export default defineFilepressConfig({
 	tagline: "Did the reader stress the word you meant?",
 	url: "https://misemphasis.com",
 	author: "Catalyst Forge LLC",
-	logo: "/logo.svg",
-	ogImage: "/logo.svg",
+	logo: "/logo.png",
+	ogImage: "/logo.png",
 	homePage: "home",
 	nav: [
 		{ label: "Home", href: "/" },
