@@ -21,4 +21,4 @@ The product is one folder. An agent reads it and writes the report.
 - Run Misemphasis on this email.
 - Flat text. What does *only* attach to?
 
-It runs when you name it, or when a sentence is about to ship and the reading has to be the one you meant. Not for grammar, tone, structure, or applying a report.
+It runs when you name it, or when a sentence is about to ship and the reading has to be the one you meant. The report does not rewrite the source. Not for grammar, tone, structure, or applying a report.

@@ -3,7 +3,7 @@
 	"version": "0.1.1",
 	"private": false,
 	"type": "module",
-	"description": "Find how flat prose can be misread when stress is missing. An agent with the skill writes the report and offers wording that locks the intended reading.",
+	"description": "Find sentences a reader could interpret differently from what you intend. An agent writes a report of plausible readings and candidate rewrites.",
 	"license": "MIT",
 	"author": "Catalyst Forge LLC",
 	"keywords": [

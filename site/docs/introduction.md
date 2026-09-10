@@ -2,21 +2,23 @@
 title: Introduction
 ---
 
-**Misemphasis** finds how flat prose can be misread when stress is missing. An agent reads the skill and writes a report of the live readings, plus wording that locks the one you meant.
+**Misemphasis** finds sentences a reader could interpret differently from what you intend. An agent reads the skill and writes a report of the live readings, plus candidate wording for each meaning you might choose.
 
-Text has no intonation. The silent reader supplies one. It may not be yours. The teaching sentence is *I didn't say we should cancel Friday*: seven words, seven claims.
+Text has no intonation. The silent reader supplies one. It may not be yours. A rewrite can make the intended claim explicit. It cannot lock every reader to one interpretation.
+
+The teaching sentence is *I didn't say we should cancel Friday*: seven words, seven claims. A shorter two-meaning case, *We only promised the beta users a refund*, is on the [home page](/).
 
 ## The report comes first
 
-The skill writes `report.md`. Findings in three buckets. Each finding names the readings, which one a flat reader is likely to take, and rewrites that lock one reading each. The draft does not change until you pick.
+Submit a file, a selection, or a paste. The skill writes `report.md`. The draft does not change until you pick a rewrite.
 
 | Bucket | Means |
 | --- | --- |
 | **Likely misread** | A typical silent reader could take the wrong one |
 | **Possible misread** | Available if someone goes looking |
-| **Judgment call** | Context probably locks it; still worth a glance |
+| **Judgment call** | Context probably settles it, still worth a glance |
 
-Rewrites are later. This release writes the report.
+A sentence with one obvious reading is not a finding. Example that should pass: *The standup is Tuesday at 3pm in room 12.*
 
 ## What it checks
 
@@ -26,11 +28,11 @@ Rewrites are later. This release writes the report.
 - **Pronoun stress.** Which referent the contrast picks.
 - **Quantifier scope.** *All*, *some*, *any* under negation.
 
-A sentence with one obvious reading is not a finding. Grammar, tone, and structure stay out.
+Grammar, tone, and structure stay out.
 
 ## Start here
 
 - [Install](/docs/install) — download the zip
-- [Skill](/docs/skill) — the hour the agent runs
+- [Skill](/docs/skill) — what the agent does
 - [Sample report](/docs/sample-report) — the teaching sentence plus two companions
 - [Report](/docs/report) — the shape of `report.md`

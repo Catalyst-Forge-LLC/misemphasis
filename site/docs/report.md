@@ -10,12 +10,12 @@ title: Report
 4. Judgment calls
 5. Deferred skips: a count, not the sentences
 
-Every finding is its own heading: id, location, type. Then the sentence, the default silent reading, a readings table, and rewrites that lock distinct readings. Findings without an action are dropped.
+Every finding is its own heading: id, location, type. Then the sentence, the default silent reading, a readings table, and rewrites that state distinct readings. Findings without an action are dropped.
 
 Severity:
 
 - **likely misread** — a typical silent reader could take the wrong one
 - **possible misread** — available if someone goes looking
-- **judgment call** — context probably locks it
+- **judgment call** — context probably settles it
 
 Do not invent which reading the author meant. The author picks.

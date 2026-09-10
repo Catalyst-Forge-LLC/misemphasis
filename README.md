@@ -6,13 +6,26 @@
 
 An installable writing skill for AI agents.
 
-Find how flat prose can be misread when stress is missing, and offer
-wording that locks the intended reading. Written **Misemphasis**.
+Find sentences a reader could interpret differently from what you
+intend. Misemphasis shows the plausible readings and suggests clearer
+wording for the meaning you choose. Written **Misemphasis**.
 npm **`misemphasis`**.
 
-Same words. Different stress. Different claim.
+Same words. Different stress. Different claim. A rewrite can make the
+intended claim explicit. It cannot guarantee every reader will take
+that reading.
 
 **Docs:** [misemphasis.com/docs](https://misemphasis.com/docs) · **Site:** [misemphasis.com](https://misemphasis.com)
+
+## Two readings
+
+> We only promised the beta users a refund.
+
+- Audience limit: *We promised a refund only to the beta users.*
+- Remedy limit: *The only thing we promised the beta users was a refund.*
+
+Submit a file or a paste. The agent writes `report.md`. The source
+stays unchanged until you apply a selected rewrite.
 
 ## Install
 
@@ -29,8 +42,8 @@ Markdown you point an agent at. Nothing scans the tree. v1 has no CLI.
 ## Not a line editor
 
 Grammar, tone, and structure stay out. [Smell Check](https://smellcheck.dev)
-sprays unearned language. [Detangler](https://detangler.dev) combs what
-editing tangled. This one is for the reading.
+reviews unearned language. [Detangler](https://detangler.dev) reviews
+what editing tangled. This one is for the reading.
 
 ## Development
 

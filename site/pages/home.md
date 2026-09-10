@@ -1,58 +1,49 @@
 ---
 title: Did the reader stress the word you meant?
-description: Find how flat prose can be misread when stress is missing. An agent with the skill writes the report.
+description: Find sentences a reader could interpret differently from what you intend. An agent writes a report with candidate rewrites.
 order: 0
 ---
 
-Text has no intonation. A silent reader supplies one. It may not be yours.
+Find sentences a reader could interpret differently from what you intend. Misemphasis shows the plausible readings and suggests clearer wording for the meaning you choose.
 
-**Misemphasis** finds the readings a sentence already allows, then offers wording that locks the one you meant. An agent reads the skill and writes the report. Nothing in the draft changes until you say so.
+An agent reads the skill and writes `report.md`. The source text stays unchanged until you apply a selected rewrite. This is not a guarantee that every reader will take one meaning.
 
 [Docs](/docs/) · [Install](/docs/install) · [Skill](/docs/skill) · [Why the name](/about)
 
-## The teaching sentence
+## Two readings
 
-*I didn't say we should cancel Friday.*
+> We only promised the beta users a refund.
 
-| Stress | Reading |
-| --- | --- |
-| **I** | Someone else said it |
-| **didn't** | Denial that it was said |
-| **say** | Hinted or implied, not spoken |
-| **we** | They should cancel, not us |
-| **should** | Required versus optional |
-| **cancel** | Postpone, don't cancel |
-| **Friday** | Another day |
+| Reading | What a silent reader may take | Rewrite that states that meaning |
+| --- | --- | --- |
+| Limit the audience | Refunds are for beta users only | *We promised a refund only to the beta users.* |
+| Limit the remedy | The only promise was a refund | *The only thing we promised the beta users was a refund.* |
 
-Seven words. Seven claims. Flat text ships all of them. [Why this sentence](/about).
+A support note about who gets money back favors the first reading. A note about what was promised favors the second. The skill does not know the author's intent. It names the live readings. Full teaching sentence, seven stresses: [sample report](/docs/sample-report).
 
-## What you get
+## Restraint
 
-The skill writes `report.md`. Each finding names the live readings, which one a flat reader is likely to take, and rewrites that lock one reading each.
+A sentence with one obvious reading is not a finding.
+
+**No finding.** *The standup is Tuesday at 3pm in room 12.*
+
+**Judgment call.** *I didn't skip the standup because I was busy.* The next sentence, *I was in a dentist chair*, probably fixes the *because*. The skill may still flag it as a glance, not as a likely misread. Findings carry that uncertainty. They do not invent likelihood percentages.
+
+## What you submit, what you get
+
+Submit a file, a selection, or a paste. The skill writes `<stem>.misemphasis/report.md`. Each finding names the live readings, which one a flat reader is likely to take, and candidate rewrites for the meanings you might choose.
 
 | Kind | Means |
 | --- | --- |
 | **Likely misread** | A typical silent reader could take the wrong one |
 | **Possible misread** | Available if someone goes looking |
-| **Judgment call** | Context probably locks it; still worth a glance |
+| **Judgment call** | Context probably settles it, still worth a glance |
 
-A [sample report](/docs/sample-report) from the teaching sentence plus two companions.
-
-## What it checks
-
-Stress on a different word can change who, what, or whether. *Not* can attach to the verb or to what follows. *Only*, *even*, and *just* bind whichever word you stress. A stressed pronoun picks a different person. *All* and *some* under negation change how many.
-
-A sentence with one obvious reading is not a finding.
-
-## Not a line editor
-
-Grammar, tone, and structure stay out. [Smell Check](https://smellcheck.dev) sprays unearned language. [Detangler](https://detangler.dev) combs what editing tangled. This one is for the reading.
+Grammar, tone, and structure stay out. [Smell Check](https://smellcheck.dev) reviews register. [Detangler](https://detangler.dev) reviews structure.
 
 ## Install
 
 [Download the zip](/docs/install), put the folder where the table says, and ask which readings the sentence already allows.
-
-If you already use npm:
 
 ```bash
 pnpm add -D misemphasis
