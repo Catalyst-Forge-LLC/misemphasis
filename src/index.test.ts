@@ -46,11 +46,12 @@ test("package ships skills and has no bin", () => {
 	assert.ok("./skills/*" in pkg.exports);
 });
 
-test("public copy names the product and the classic sentence", () => {
+test("public copy names the product and the landing example", () => {
 	const home = readFileSync(join(packageRoot, "site", "pages", "home.md"), "utf8");
 	const readme = readFileSync(join(packageRoot, "README.md"), "utf8");
 	assert.match(home, /Did the reader stress the word you meant\?/);
-	assert.match(home, /I didn't say we should cancel Friday/);
+	assert.match(home, /We only promised the beta users a refund/);
+	assert.doesNotMatch(home, /I didn't say we should cancel Friday/);
 	assert.match(home, /Smell Check/);
 	assert.doesNotMatch(home, /Sibling of/);
 	assert.doesNotMatch(home, /npm \*\*`misemphasis`\*\*/);
@@ -64,6 +65,7 @@ test("public copy names the product and the classic sentence", () => {
 	assert.match(about, /What I Really Mean/);
 	assert.match(about, /The Language of Cat/);
 	assert.match(about, /I didn't say she stole my money/);
+	assert.match(about, /I didn't say we should cancel Friday/);
 	assert.doesNotMatch(home, /stole my money/);
 });
 
