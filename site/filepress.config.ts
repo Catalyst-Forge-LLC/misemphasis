@@ -6,7 +6,7 @@ const npm = "https://www.npmjs.com/package/misemphasis";
 export default defineFilepressConfig({
 	title: "Misemphasis",
 	description:
-		"Find how flat prose can be misread when stress is missing. An agent with the skill writes the report.",
+		"An installable writing skill for AI agents. Find how flat prose can be misread when stress is missing.",
 	tagline: "Did the reader stress the word you meant?",
 	url: "https://misemphasis.com",
 	author: "Catalyst Forge LLC",
@@ -15,14 +15,13 @@ export default defineFilepressConfig({
 	homePage: "home",
 	nav: [
 		{ label: "Home", href: "/" },
+		{ label: "Get started", href: "/docs/install" },
 		{ label: "Docs", href: "/docs/" },
-		{ label: "Install", href: "/docs/install" },
-		{ label: "Skill", href: "/docs/skill" },
 		{ label: "About", href: "/about" },
 		{ label: "GitHub", href: github, icon: "github" },
 	],
 	footerLinks: [
-		{ label: "Docs", href: "/docs/" },
+		{ label: "Get started", href: "/docs/install" },
 		{ label: "npm", href: npm },
 		{ label: "GitHub", href: github, icon: "github" },
 	],

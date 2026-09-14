@@ -9,13 +9,20 @@ An installable writing skill for AI agents.
 Find sentences a reader could interpret differently from what you
 intend. Misemphasis shows the plausible readings and suggests clearer
 wording for the meaning you choose. Written **Misemphasis**.
-npm **`misemphasis`**.
 
 Same words. Different stress. Different claim. A rewrite can make the
 intended claim explicit. It cannot guarantee every reader will take
 that reading.
 
-**Docs:** [misemphasis.com/docs](https://misemphasis.com/docs) · **Site:** [misemphasis.com](https://misemphasis.com)
+**Get started:** pick the agent, install the skill, then run the
+refund sentence —
+[misemphasis.com/docs/install](https://misemphasis.com/docs/install).
+
+- [Cursor](https://misemphasis.com/docs/install#cursor)
+- [Claude Code](https://misemphasis.com/docs/install#claude-code)
+- [Claude.ai](https://misemphasis.com/docs/install#claudeai)
+
+**Site:** [misemphasis.com](https://misemphasis.com)
 
 ## Two readings
 
@@ -24,20 +31,32 @@ that reading.
 - Audience limit: *We promised a refund only to the beta users.*
 - Remedy limit: *The only thing we promised the beta users was a refund.*
 
-Submit a file or a paste. The agent writes `report.md`. The source
-stays unchanged until you apply a selected rewrite.
+Ask:
 
-## Install
+> Use Misemphasis on this sentence. Follow the installed Misemphasis
+> skill. Review it using its instructions.
+
+The agent writes `report.md`. The source does not change. Choose the
+wording that matches your intent, then copy it into the draft or ask
+the agent to make that specific edit outside this skill.
+
+Nothing scans the tree. v1 has no CLI.
+
+## Other installation methods
+
+npm supplies the skill files. It does not register the skill with the
+agent.
 
 ```bash
 pnpm add -D misemphasis
 ```
 
-Copy `node_modules/misemphasis/skills/misemphasis` to
-`.cursor/skills/misemphasis`. Or skip npm and
-[install the skill](https://misemphasis.com/docs/skill) as a folder.
+Copy `node_modules/misemphasis/skills/misemphasis` into the same
+destination the [Get started](https://misemphasis.com/docs/install)
+page names for your agent.
 
-Markdown you point an agent at. Nothing scans the tree. v1 has no CLI.
+Updating the npm dependency does not refresh a folder you already
+copied. Copy again after you bump the package.
 
 ## Not a line editor
 

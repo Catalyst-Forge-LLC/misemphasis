@@ -1,16 +1,24 @@
 ---
-title: Introduction
+title: What it does
 ---
 
-**Misemphasis** finds sentences a reader could interpret differently from what you intend. An agent reads the skill and writes a report of the live readings, plus candidate wording for each meaning you might choose.
+**Misemphasis** is an installable writing skill for AI agents. It finds sentences a reader could interpret differently from what you intend.
+
+An agent reads the skill and writes a report of the live readings, plus candidate wording for each meaning you might choose.
+
+**[Get started](/docs/install)** — install the skill in your agent, then use it.
 
 Text has no intonation. The silent reader supplies one. It may not be yours. A rewrite can make the intended claim explicit. It cannot lock every reader to one interpretation.
 
 The teaching sentence is *I didn't say we should cancel Friday*: seven words, seven claims. A shorter two-meaning case, *We only promised the beta users a refund*, is on the [home page](/).
 
-## The report comes first
+## What it reads, writes, and changes
 
-Submit a file, a selection, or a paste. The skill writes `report.md`. The draft does not change until you pick a rewrite.
+| | |
+| --- | --- |
+| Reads | A file, a selection, or a paste |
+| Writes | `report.md` |
+| Changes | Nothing. You choose a rewrite and apply it yourself |
 
 | Bucket | Means |
 | --- | --- |
@@ -30,9 +38,4 @@ A sentence with one obvious reading is not a finding. Example that should pass: 
 
 Grammar, tone, and structure stay out.
 
-## Start here
-
-- [Install](/docs/install) — download the zip
-- [Skill](/docs/skill) — what the agent does
-- [Sample report](/docs/sample-report) — the teaching sentence plus two companions
-- [Report](/docs/report) — the shape of `report.md`
+A [sample report](/docs/sample-report). The [report shape](/docs/report).

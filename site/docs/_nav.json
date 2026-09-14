@@ -3,17 +3,19 @@
 		{
 			"title": "Getting started",
 			"items": [
-				{ "id": "introduction", "title": "Introduction" },
-				{ "id": "install", "title": "Install" },
-				{ "id": "skill", "title": "Skill" },
+				{ "id": "install", "title": "Get started" },
 				{ "id": "sample-report", "title": "Sample report" }
 			]
 		},
 		{
 			"title": "Reference",
 			"items": [
+				{ "id": "introduction", "title": "What it does" },
 				{ "id": "report", "title": "Report" }
 			]
 		}
+	],
+	"aliases": [
+		{ "id": "skill", "title": "Skill" }
 	]
 }

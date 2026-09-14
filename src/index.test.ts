@@ -72,11 +72,17 @@ test("public copy names the product and the landing example", () => {
 test("docs nav has a markdown file for every item", () => {
 	const nav = JSON.parse(
 		readFileSync(join(packageRoot, "site", "docs", "_nav.json"), "utf8"),
-	) as { sections: Array<{ items: Array<{ id: string }> }> };
+	) as {
+		sections: Array<{ items: Array<{ id: string }> }>;
+		aliases?: Array<{ id: string }>;
+	};
 	for (const section of nav.sections) {
 		for (const item of section.items) {
 			assert.ok(existsSync(join(packageRoot, "site", "docs", `${item.id}.md`)), item.id);
 		}
+	}
+	for (const item of nav.aliases ?? []) {
+		assert.ok(existsSync(join(packageRoot, "site", "docs", `${item.id}.md`)), item.id);
 	}
 	execFileSync("node", [join(packageRoot, "site", "scripts", "build-docs.mjs")], {
 		cwd: join(packageRoot, "site"),
@@ -110,6 +116,8 @@ test("install and files pages name the hook and finish the redirects", () => {
 	const install = readFileSync(join(packageRoot, "site", "docs", "install.md"), "utf8");
 	assert.match(install, /Nothing scans the tree/);
 	assert.match(install, /misemphasis\.zip/);
+	assert.match(install, /Which agent do you use/);
+	assert.match(install, /Other installation methods/);
 	assert.ok(!existsSync(join(packageRoot, "site", "pages", "install.md")));
 	assert.ok(!existsSync(join(packageRoot, "site", "pages", "skill.md")));
 	const redirects = readFileSync(join(packageRoot, "site", "static", "_redirects"), "utf8");
@@ -117,7 +125,9 @@ test("install and files pages name the hook and finish the redirects", () => {
 	assert.match(redirects, /\/skill \/docs\/skill 308/);
 	const filepress = readFileSync(join(packageRoot, "site", "filepress.config.ts"), "utf8");
 	assert.match(filepress, /href: "\/docs\/install"/);
-	assert.match(filepress, /href: "\/docs\/skill"/);
+	assert.match(filepress, /Get started/);
+	assert.doesNotMatch(filepress, /label: "Skill"/);
+	assert.doesNotMatch(filepress, /label: "Install"/);
 	assert.doesNotMatch(filepress, /href: "\/install"/);
 	assert.doesNotMatch(filepress, /href: "\/posts"/);
 });
