@@ -33,14 +33,15 @@ refund sentence —
 
 Ask:
 
-> Use Misemphasis on this sentence. Follow the installed Misemphasis
-> skill. Review it using its instructions.
+> Use Misemphasis on `refund.md`. Follow the installed Misemphasis
+> skill. Write the report and leave the sentence unchanged.
 
-The agent writes `report.md`. The source does not change. Choose the
+Save the sentence as `refund.md` first. The report lands at
+`refund.misemphasis/report.md`. The source does not change. Choose the
 wording that matches your intent, then copy it into the draft or ask
 the agent to make that specific edit outside this skill.
 
-Nothing scans the tree. v1 has no CLI.
+A writable workspace is required. Nothing scans the tree. v1 has no CLI.
 
 ## Other installation methods
 

@@ -25,8 +25,8 @@ A support note about who gets money back favors the first reading. A note about 
 
 | | |
 | --- | --- |
-| Reads | A file, a selection, or a pasted sentence |
-| Writes | `report.md` next to the file, or `prose.misemphasis/report.md` for a paste |
+| Reads | A named file (preferred), or a paste in a writable workspace |
+| Writes | `refund.md` → `refund.misemphasis/report.md`; a nameless paste → `prose.misemphasis/report.md` |
 | Changes | Nothing. Choose the wording that matches your intent, then copy it into the draft or ask the agent to make that specific edit |
 
 ## Restraint

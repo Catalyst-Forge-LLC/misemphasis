@@ -4,13 +4,23 @@ title: Get started
 
 Install the skill in your agent, then use it. You do not need Node or npm for this path. Nothing scans the tree.
 
+Misemphasis writes a report file. A writable workspace is required. Claude.ai without project files is not a supported first-use route.
+
+## Supported hosts
+
+| Host | Scope | Required | Notes |
+| --- | --- | --- | --- |
+| Cursor | Project skills folder | Writable workspace | Host listing / discovery not independently verified in this docs pass |
+| Claude Code | Project or `~/.claude/skills/` | Writable workspace | Same |
+| Other agents that read `SKILL.md` | Manual copy | Writable workspace | Unverified |
+| Claude.ai | — | Writable project files | Not a supported first-use route without files |
+
+A folder on disk is not proof the agent loaded the skill. Prefer the host’s skill list or a visible file-read of `SKILL.md`. A report alone does not prove loading.
+
 ## Which agent do you use?
 
 - [Cursor](#cursor)
 - [Claude Code](#claude-code)
-- [Claude.ai](#claudeai)
-
-A folder on disk is not proof the agent found the skill. The first run below is the check.
 
 ## Cursor
 
@@ -30,7 +40,7 @@ Put that folder in the project you are reviewing:
 
 ### Confirm it
 
-Ask Cursor to use Misemphasis on the refund sentence below. If it writes `report.md`, it found the skill and the reference files.
+If Cursor lists installed skills, confirm `misemphasis`. Otherwise ask it to open `SKILL.md` from that folder and quote the first heading.
 
 ### Try it
 
@@ -42,17 +52,21 @@ We only promised the beta users a refund.
 
 Then ask:
 
-> Use Misemphasis on `refund.md`. Follow the installed Misemphasis skill. Review that sentence using its instructions.
+> Use Misemphasis on `refund.md`. Follow the installed Misemphasis skill. Write the report and leave the sentence unchanged.
+
+A paste with no filename uses `prose.misemphasis/report.md` in the working directory. Do not invent `refund.misemphasis/` from page copy when you did not supply `refund.md`.
 
 ### Find the result
 
-The report lands in `refund.misemphasis/report.md` next to the file.
+Open `refund.md` → `refund.misemphasis/report.md`.
 
 Success looks like this shape, not identical wording from every model:
 
 - Plausible readings of the sentence
 - Candidate wording for each reading
 - The original sentence left unchanged
+
+That the example behaved is not the same check as discovery.
 
 ## Claude Code
 
@@ -70,47 +84,33 @@ Unzip, then put the folder in the repo you are reviewing:
 
 ### Confirm it
 
-Same check as Cursor: the first run must produce `report.md`.
+If Claude Code lists skills, confirm `misemphasis`. Otherwise ask it to open `SKILL.md` from that folder and quote the first heading.
 
 ### Try it
 
-Same request as [Cursor](#try-it).
+Save this sentence as `refund.md`:
+
+```markdown
+We only promised the beta users a refund.
+```
+
+Then ask:
+
+> Use Misemphasis on `refund.md`. Follow the installed Misemphasis skill. Write the report and leave the sentence unchanged.
 
 ### Find the result
 
-Same path as [Cursor](#find-the-result).
-
-## Claude.ai
-
-### Get it
-
-Download [misemphasis.zip](/skills/misemphasis.zip).
-
-### Add it
-
-Do not unzip. Open Settings → Customize → Skills and upload the zip.
-
-### Confirm it
-
-Start a chat and run the request below. If the agent writes a Misemphasis report, it loaded the skill.
-
-### Try it
-
-Paste the sentence, then ask:
-
-> Use Misemphasis on this sentence. Follow the installed Misemphasis skill. Review it using its instructions.
->
-> We only promised the beta users a refund.
-
-### Find the result
-
-The report appears in the chat. When the agent can write files, it lands in `refund.misemphasis/report.md`.
+Open `refund.misemphasis/report.md`. Source unchanged.
 
 ## After the review
 
 There is no apply skill. Choose the wording that expresses your intent, then copy it into the draft or ask your agent to make that specific edit outside this skill.
 
 The source stays unchanged until you do that.
+
+### Update or remove
+
+Replace the installed `misemphasis` folder to update. Delete that folder to uninstall. Copied skills do not refresh when you bump the npm package.
 
 ## Other ways to ask
 
@@ -143,6 +143,6 @@ Or clone the [repo](https://github.com/Catalyst-Forge-LLC/misemphasis) and copy 
 - Cursor: `~/.cursor/skills/misemphasis/`
 - Claude Code: `~/.claude/skills/misemphasis/`
 
-Same folder shape. The first-run check is the same.
+Same folder shape. Discovery and first-use checks are the same.
 
 A [sample report](/docs/sample-report) on the teaching sentence.

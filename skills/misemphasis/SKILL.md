@@ -14,11 +14,14 @@ author wants the draft rewritten, stop. That is a different skill.
 
 ## The hour
 
-1. Locate the prose (a file, a selection, or a paste). If none, ask.
+1. Locate the prose (a named file preferred; a paste is allowed in a
+   writable workspace). If none, ask.
 2. `<stem>` is the filename without its last extension.
    `draft.md` → folder `draft.misemphasis/` next to the file.
    A paste with no file: folder `prose.misemphasis/` in the
-   working directory.
+   working directory. Do not invent a stem from surrounding website
+   copy. A writable workspace is required; do not claim a completed
+   run when no report file can be written.
 3. Split into candidate sentences. Skip code fences, headings
    that are titles only, and bare lists of names.
 4. For each sentence, ask whether a silent reader who stresses a
