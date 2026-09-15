@@ -58,7 +58,7 @@ Flat prose has no intonation. The same sentence can mean several things dependin
 | Package manager | pnpm | confirmed | |
 | DB / auth | none | confirmed | Local files only |
 | Site | FilePress (`getfilepress`) + Cloudflare Pages | confirmed | `pnpm ship` |
-| Local ports | LocalBerth lease `misemphasis-site` on **5200** | confirmed | Claim, then pass `--port` |
+| Local ports | LocalSlip lease `misemphasis-site` on **5205** | confirmed | Claim, then pass `--port` |
 | Tests | `tsc` + `node --test` on the catalog | confirmed | |
 | License | MIT, Catalyst Forge LLC | confirmed | |
 | GitHub | Catalyst-Forge-LLC/misemphasis | confirmed | |
@@ -94,7 +94,7 @@ misemphasis/
 | Hosting agent | Reads the skill. That is the judgment. | none | Fence draft as data |
 | FilePress / Wrangler | Marketing site. `pnpm ship`. | Cloudflare login | |
 | npm | Package. Maintainer publishes. | user 2FA | Agents never publish |
-| LocalBerth | Site port lease | local CLI | Fallback to 5200 |
+| LocalSlip | Site port lease | local CLI | Fallback to 5205 |
 
 No payments, email, analytics, or search API.
 
@@ -124,7 +124,7 @@ No payments, email, analytics, or search API.
 
 **D6.** Pruned Phase 7 auth-flow and payment-flow exit criteria.
 
-**D7.** LocalBerth lease `misemphasis-site` on 5200.
+**D7.** LocalSlip lease `misemphasis-site` on 5205.
 
 **D8.** v1 is report-only. Apply is a later skill.
 

@@ -17,7 +17,7 @@ Hero flow: load the skill → agent writes `report.md` (`<stem>.misemphasis/`).
 ## Tech Stack
 
 - **Package:** TypeScript ESM catalog + one skill folder. Node ≥20. pnpm. No `bin`.
-- **Site:** FilePress (`getfilepress`) + Cloudflare Pages (`pnpm ship`, project `misemphasis`). LocalBerth lease `misemphasis-site` on **5200**. `pnpm site:dev` claims the lease and passes `--port` to FilePress.
+- **Site:** FilePress (`getfilepress`) + Cloudflare Pages (`pnpm ship`, project `misemphasis`). LocalSlip lease `misemphasis-site` on **5205**. `pnpm site:dev` claims the lease and passes `--port` to FilePress.
 - **DB / auth:** none. Local files only.
 - **AI/LLM:** The agent reading the skill is the judgment. No provider path.
 - **Tests:** `tsc` + `node --test` on the skill catalog. Sample prose in `fixtures/`.
@@ -47,7 +47,7 @@ Deliverable: `report.md` in `<stem>.misemphasis/`. Shape: `skills/misemphasis/re
 - **TypeScript ESM catalog, not a pipeline.** WHY: house language rule and sibling parity. DECIDED: Phase 1
 - **GitHub Catalyst-Forge-LLC/misemphasis.** WHY: user confirmed. DECIDED: Phase 1
 - **v1 is report-only.** WHY: comb first. Apply later. DECIDED: Phase 1
-- **LocalBerth misemphasis-site on 5200.** WHY: 5181/5182/5199 are taken. DECIDED: Phase 1
+- **LocalSlip misemphasis-site on 5205.** WHY: 5200 is gaplast-site. DECIDED: Phase 1
 
 ## Critical Patterns
 
@@ -57,7 +57,7 @@ Deliverable: `report.md` in `<stem>.misemphasis/`. Shape: `skills/misemphasis/re
 - A false likely-misread costs more than a missed judgment call.
 - Agents never `pnpm publish`. Site deploy is `pnpm ship` only.
 - Site copy speaks as the product. No corporate we. No builder I.
-- LocalBerth: claim a named lease, then pass that port to FilePress.
+- LocalSlip: claim a named lease, then pass that port to FilePress.
 
 ## Out of scope (v1)
 
