@@ -20,7 +20,6 @@ refund sentence —
 
 - [Cursor](https://misemphasis.com/docs/install#cursor)
 - [Claude Code](https://misemphasis.com/docs/install#claude-code)
-- [Claude.ai](https://misemphasis.com/docs/install#claudeai)
 
 **Site:** [misemphasis.com](https://misemphasis.com)
 
@@ -63,7 +62,7 @@ copied. Copy again after you bump the package.
 
 Grammar, tone, and structure stay out. [Smell Check](https://smellcheck.dev)
 reviews unearned language. [Detangler](https://detangler.dev) reviews
-what editing tangled. This one is for the reading.
+what editing tangled.
 
 ## Development
 
