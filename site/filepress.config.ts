@@ -8,6 +8,7 @@ export default defineFilepressConfig({
 	description:
 		"An installable writing skill for AI agents. Find how flat prose can be misread when stress is missing.",
 	tagline: "Did the reader stress the word you meant?",
+	lede: 'Skill · stress · other reading',
 	url: "https://misemphasis.com",
 	author: "Catalyst Forge LLC",
 	logo: "/logo.png",

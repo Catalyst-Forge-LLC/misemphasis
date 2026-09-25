@@ -1,5 +1,5 @@
 ---
-title: Did the reader stress the word you meant?
+title: The other reading
 description: An installable writing skill for AI agents. Find sentences a reader could interpret differently from what you intend.
 order: 0
 ---
@@ -7,6 +7,11 @@ order: 0
 An installable writing skill for AI agents. Misemphasis finds sentences a reader could interpret differently from what you intend. It shows the plausible readings and suggests clearer wording for the meaning you choose.
 
 An agent reads the skill and writes `report.md`. The source text does not change. This is not a guarantee that every reader will take one meaning.
+
+<div class="cta-row">
+  <a class="cta cta-primary" href="/docs/install">Install in your agent</a>
+  <a class="cta cta-secondary" href="https://github.com/Catalyst-Forge-LLC/misemphasis">View on GitHub</a>
+</div>
 
 ## Two readings
 
