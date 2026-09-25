@@ -1,6 +1,6 @@
 {
 	"name": "misemphasis",
-	"version": "0.1.9",
+	"version": "0.1.10",
 	"private": false,
 	"type": "module",
 	"description": "Find sentences a reader could interpret differently from what you intend. An agent writes a report of plausible readings and candidate rewrites.",
