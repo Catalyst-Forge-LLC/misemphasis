@@ -1,5 +1,5 @@
 ---
-title: The other reading
+title: Find the other reading a sentence already allows.
 description: An installable writing skill for AI agents. Find sentences a reader could interpret differently from what you intend.
 order: 0
 ---
