@@ -14,6 +14,6 @@ The seven-stress demonstration is older than this skill. Rachel Rooney's *What I
 
 [This clip](https://x.com/Rainmaker1973/status/2097696528165179723) is that poem. We wanted a sentence of our own. The one here is *I didn't say we should cancel Friday.*
 
-[Smell Check](https://smellcheck.dev) sprays unearned language. [Detangler](https://detangler.dev) combs what editing tangled. This one is for the reading.
+[Smell Check](https://smellcheck.dev) sprays unearned language. [Detangler](https://detangler.dev) combs what editing tangled. Misemphasis shows alternate readings and clearer wording.
 
 Maintained by [Catalyst Forge LLC](https://www.catalystforge.com). MIT licensed.
