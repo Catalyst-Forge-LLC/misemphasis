@@ -49,7 +49,9 @@ test("package ships skills and has no bin", () => {
 test("public copy names the product and the landing example", () => {
 	const home = readFileSync(join(packageRoot, "site", "pages", "home.md"), "utf8");
 	const readme = readFileSync(join(packageRoot, "README.md"), "utf8");
-	assert.match(home, /Did the reader stress the word you meant\?/);
+	const filepress = readFileSync(join(packageRoot, "site", "filepress.config.ts"), "utf8");
+	assert.match(home, /Find the other reading a sentence already allows\./);
+	assert.match(filepress, /Did the reader stress the word you meant\?/);
 	assert.match(home, /We only promised the beta users a refund/);
 	assert.doesNotMatch(home, /I didn't say we should cancel Friday/);
 	assert.match(home, /Smell Check/);
