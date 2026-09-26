@@ -12,7 +12,7 @@ The seven-stress demonstration is older than this skill. Rachel Rooney's *What I
 
 > I didn't say she stole my money.
 
-[This clip](https://x.com/Rainmaker1973/status/2097696528165179723) is that poem. We wanted a sentence of our own. The one here is *I didn't say we should cancel Friday.*
+[This clip](https://x.com/Rainmaker1973/status/2097696528165179723) is that poem. Ours is on the home page: *I didn't say we should cancel Friday.*
 
 [Smell Check](https://smellcheck.dev) sprays unearned language. [Detangler](https://detangler.dev) combs what editing tangled. Misemphasis shows alternate readings and clearer wording.
 

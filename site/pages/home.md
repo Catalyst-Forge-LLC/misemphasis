@@ -13,6 +13,22 @@ An agent reads the skill and writes `report.md`. The source text does not change
   <a class="cta cta-secondary" href="https://github.com/Catalyst-Forge-LLC/misemphasis">View on GitHub</a>
 </div>
 
+## One sentence, seven readings
+
+*I didn't say we should cancel Friday.*
+
+| Stress | Reading |
+| --- | --- |
+| **I** | Someone else said it |
+| **didn't** | Denial that it was said |
+| **say** | Hinted or implied, not spoken |
+| **we** | They should cancel, not us |
+| **should** | Required, or optional |
+| **cancel** | Postpone, don't cancel |
+| **Friday** | Another day |
+
+Seven words. Seven claims. Flat text ships all of them. The [sample report](/docs/sample-report) walks this sentence and two others.
+
 ## Two readings
 
 > We only promised the beta users a refund.

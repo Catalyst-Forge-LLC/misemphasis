@@ -53,7 +53,8 @@ test("public copy names the product and the landing example", () => {
 	assert.match(home, /Find the other reading a sentence already allows\./);
 	assert.match(filepress, /Did the reader stress the word you meant\?/);
 	assert.match(home, /We only promised the beta users a refund/);
-	assert.doesNotMatch(home, /I didn't say we should cancel Friday/);
+	assert.match(home, /I didn't say we should cancel Friday/);
+	assert.match(home, /Someone else said it/);
 	assert.match(home, /Smell Check/);
 	assert.doesNotMatch(home, /Sibling of/);
 	assert.doesNotMatch(home, /npm \*\*`misemphasis`\*\*/);
