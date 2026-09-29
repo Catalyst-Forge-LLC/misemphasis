@@ -1,6 +1,6 @@
 ---
 app_facts_version: 0.1.0
-name: misemphasis
+name: Misemphasis
 type: web app
 status: active
 license: MIT
@@ -25,7 +25,7 @@ credits:
   built_by: "Catalyst Forge — https://www.catalystforge.com/"
 ---
 
-# misemphasis
+# Misemphasis
 
 `web app` · **active** · MIT
 
@@ -56,4 +56,4 @@ _None listed_
 ---
 *Generated with [AppFacts](https://appfacts.dev) · Built by [Catalyst Forge](https://www.catalystforge.com/) · [Visual label][appfacts-label]*
 
-[appfacts-label]: https://appfacts.dev/v#af1.eNpNkMtqw0AMRX_F3EVW45huZxsotKTdtLtSijwW42k8Dyw5bQj-9zIxhSwlHe656Ioz7INBosiwiEE4lpEkCAz0Uuryh_uGSoGBKOkisCCn4cwwmILjJJV6eXrfCHeCvWKi5Bfy9fJMZ3pzcygKg3lJGm6u1zzw_vvmyXkKycOipBKxGgxcBPbj06BfwjTUwELuRJ6_IiXyPP_DBsqisFBxzW7XpDxw07Z12QxBtAtp4N99nTeZy7GEqRa4RTeyNVsNxhy5bJVH1SK26-7-sXe52mYuWYLm-XKH-aDj0leiO5DSdBFtH_PsuT0eD_chWP8AK8l9Ig
+[appfacts-label]: https://appfacts.dev/v#af1.eNpNkM1qw0AMhF_FzCGndUyvew0UWtJc2lspRVmL9TbeHyw5bQh597I2pTlqNJpv0BVn2AeDRJFh8RKEYxlIgsBAL6WK33xsqBQYiJLOAgtyGs4MgzE4TrKcPr2tDneCvWKk5GfydfNMZ3p1UygKg2lOGhbWIfe8_Vo4OY8heViUVCJuBj0XgX3_MDjOYexrYCF3Is-fkRJ5nv7MBsqisFBxzWbTpNxz07ZVbPog2oXU88-2zivM5VjCWAss0Y2szW4GQ45c1sqDahHbdfH_H1uXK23ikiVoni53Nh90mI_V0e1IabyIto958tzu97v7ENx-Af96fQI
