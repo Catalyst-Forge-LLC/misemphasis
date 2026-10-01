@@ -50,7 +50,16 @@ test("public copy names the product and the landing example", () => {
 	const home = readFileSync(join(packageRoot, "site", "pages", "home.md"), "utf8");
 	const readme = readFileSync(join(packageRoot, "README.md"), "utf8");
 	const filepress = readFileSync(join(packageRoot, "site", "filepress.config.ts"), "utf8");
-	assert.match(home, /Find the other reading a sentence already allows\./);
+	assert.match(home, /title: Find the sentence that means something else when the stress moves\./);
+	assert.match(home, /checks stress and scope only/);
+	for (const text of [home, readme]) {
+		assert.doesNotMatch(text, /interpret differently from what you\s+intend/);
+	}
+	const types = readFileSync(
+		join(packageRoot, "skills", "misemphasis", "references", "reading-types.md"),
+		"utf8",
+	);
+	assert.match(types, /is an `emphasis_shift`, not this\s+type/);
 	assert.match(filepress, /Did the reader stress the word you meant\?/);
 	assert.match(home, /We only promised the beta users a refund/);
 	assert.match(home, /I didn't say we should cancel Friday/);

@@ -2,7 +2,7 @@
 title: What it does
 ---
 
-**Misemphasis** is an installable writing skill for AI agents. It finds sentences a reader could interpret differently from what you intend.
+**Misemphasis** is an installable writing skill for AI agents. It finds sentences that mean something else when a silent reader stresses a different word, or takes *not* or *only* to limit something else.
 
 An agent reads the skill and writes a report of the live readings, plus candidate wording for each meaning you might choose.
 
@@ -36,6 +36,6 @@ A sentence with one obvious reading is not a finding. Example that should pass: 
 - **Pronoun stress.** Which referent the contrast picks.
 - **Quantifier scope.** *All*, *some*, *any* under negation.
 
-Grammar, tone, and structure stay out.
+Grammar, tone, and structure stay out. So do ambiguities stress cannot move: an *it* with two possible owners, or a phrase that could modify either of two words. [Smell Check](https://smellcheck.dev) catches those as a sense collision.
 
 A [sample report](/docs/sample-report). The [report shape](/docs/report).

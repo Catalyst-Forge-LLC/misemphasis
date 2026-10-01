@@ -1,10 +1,10 @@
 ---
-title: Find the other reading a sentence already allows.
-description: An installable writing skill for AI agents. Find sentences a reader could interpret differently from what you intend.
+title: Find the sentence that means something else when the stress moves.
+description: An installable writing skill for AI agents. Find sentences that mean something else when a reader stresses a different word.
 order: 0
 ---
 
-An installable writing skill for AI agents. Misemphasis finds sentences a reader could interpret differently from what you intend. It shows the plausible readings and suggests clearer wording for the meaning you choose.
+An installable writing skill for AI agents. Misemphasis finds sentences that mean something else when a silent reader stresses a different word, or takes *not* or *only* to limit something else. It shows the plausible readings and suggests clearer wording for the meaning you choose.
 
 An agent reads the skill and writes `report.md`. The source text does not change. This is not a guarantee that every reader will take one meaning.
 
@@ -68,6 +68,6 @@ There is no apply skill. Pick the candidate wording that expresses your intent. 
 | **Possible misread** | Available if someone goes looking |
 | **Judgment call** | Context probably settles it, still worth a glance |
 
-Grammar, tone, and structure stay out. [Smell Check](https://smellcheck.dev) reviews register. [Detangler](https://detangler.dev) reviews structure.
+Misemphasis checks stress and scope only. An *it* with two possible owners, or a phrase that could modify either of two words, is a different ambiguity. [Smell Check](https://smellcheck.dev) catches those as a sense collision, and it also reviews register. [Detangler](https://detangler.dev) reviews structure. Grammar and tone stay out.
 
 Built by [Catalyst Forge LLC](https://www.catalystforge.com). MIT.

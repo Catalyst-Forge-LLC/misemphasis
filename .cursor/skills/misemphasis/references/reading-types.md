@@ -32,8 +32,9 @@ other commitment), only beta users, or only a refund.
 
 Stress on a pronoun or demonstrative contrasts referents.
 
-*I never said we should invite **him*** — him, not her; or
-invite, not assign.
+*I never said we should invite **him*** — him, not her. Stress
+on *invite* (invite, not assign) is an `emphasis_shift`, not this
+type.
 
 If the pronoun has one obvious antecedent and no contrast is
 in the passage, skip it.

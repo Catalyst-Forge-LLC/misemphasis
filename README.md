@@ -6,9 +6,10 @@
 
 An installable writing skill for AI agents.
 
-Find sentences a reader could interpret differently from what you
-intend. Misemphasis shows the plausible readings and suggests clearer
-wording for the meaning you choose. Written **Misemphasis**.
+Find sentences that mean something else when a reader stresses a
+different word, or takes *not* or *only* to limit something else.
+Misemphasis shows the plausible readings and suggests clearer wording
+for the meaning you choose. Written **Misemphasis**.
 
 Same words. Different stress. Different claim. A rewrite can make the
 intended claim explicit. It cannot guarantee every reader will take

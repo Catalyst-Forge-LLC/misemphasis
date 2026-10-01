@@ -3,7 +3,7 @@
 	"version": "0.1.14",
 	"private": false,
 	"type": "module",
-	"description": "Find sentences a reader could interpret differently from what you intend. An agent writes a report of plausible readings and candidate rewrites.",
+	"description": "Find sentences that mean something else when a reader stresses a different word. An agent writes a report of plausible readings and candidate rewrites.",
 	"license": "MIT",
 	"author": "Catalyst Forge LLC",
 	"keywords": [
