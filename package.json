@@ -1,6 +1,6 @@
 {
 	"name": "misemphasis",
-	"version": "0.1.14",
+	"version": "0.1.15",
 	"private": false,
 	"type": "module",
 	"description": "Find sentences that mean something else when a reader stresses a different word. An agent writes a report of plausible readings and candidate rewrites.",
