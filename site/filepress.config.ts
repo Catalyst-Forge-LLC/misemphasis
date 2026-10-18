@@ -5,10 +5,9 @@ const npm = "https://www.npmjs.com/package/misemphasis";
 
 export default defineFilepressConfig({
 	title: "Misemphasis",
-	description:
-		"An installable writing skill for AI agents. Find how flat prose can be misread when stress is missing.",
+	description: "A reader can stress a different word from the one you intended. Misemphasis shows plausible alternate readings and clearer wording for each, so you can choose the meaning before sending the text.",
 	tagline: "Did the reader stress the word you meant?",
-	lede: 'Skill · stress · other reading',
+	lede: "Reading and meaning review skill for your AI agent",
 	url: "https://misemphasis.com",
 	author: "Catalyst Forge LLC",
 	logo: "/logo.png",

@@ -1,17 +1,10 @@
 ---
-title: Find the sentence that means something else when the stress moves.
-description: An installable writing skill for AI agents. Find sentences that mean something else when a reader stresses a different word.
+title: "Catch the other meaning in your sentence."
+description: "A reader can stress a different word from the one you intended. Misemphasis shows plausible alternate readings and clearer wording for each, so you can choose the meaning before sending the text."
 order: 0
 ---
 
-An installable writing skill for AI agents. Misemphasis finds sentences that mean something else when a silent reader stresses a different word, or takes *not* or *only* to limit something else. It shows the plausible readings and suggests clearer wording for the meaning you choose.
-
-An agent reads the skill and writes `report.md`. The source text does not change. This is not a guarantee that every reader will take one meaning.
-
-<div class="cta-row">
-  <a class="cta cta-primary" href="/docs/install">Install in your agent</a>
-  <a class="cta cta-secondary" href="https://github.com/Catalyst-Forge-LLC/misemphasis">View on GitHub</a>
-</div>
+<section class="value-hero" aria-label="Misemphasis overview"><div class="value-intro"><p class="value-kind">Reading and meaning review skill for your AI agent</p><h1>Catch the other meaning in your sentence.</h1><p class="value-lede">A reader can stress a different word from the one you intended. Misemphasis shows plausible alternate readings and clearer wording for each, so you can choose the meaning before sending the text.</p><div class="cta-row"><a class="cta cta-primary" href="/docs/install">Install Misemphasis</a><a class="cta cta-secondary" href="/docs/sample-report">Read an example report</a></div><p class="value-limit">Your agent writes report.md and leaves the source unchanged. No wording guarantees one reading for everyone.</p></div><figure class="value-proof"><figcaption>Illustrative example</figcaption><p><strong>Starting point</strong><br>“We only promised the beta users a refund.”</p><div class="value-result"><p><strong>What you get</strong><br>Audience: refunds only for beta users.<br>Remedy: a refund was the only promise.</p></div><p>The report gives a rewrite for each meaning. You supply the intent.</p><p class="value-note">Illustrative readings from the worked example.</p></figure></section>
 
 ## One sentence, seven readings
 
