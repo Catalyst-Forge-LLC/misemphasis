@@ -4,7 +4,7 @@ name: Misemphasis
 type: web app
 status: active
 license: MIT
-version: 0.1.17
+version: 0.1.18
 homepage: https://misemphasis.com
 repository: https://github.com/Catalyst-Forge-LLC/misemphasis
 stack:
