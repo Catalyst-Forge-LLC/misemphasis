@@ -50,7 +50,7 @@ test("public copy names the product and the landing example", () => {
 	const home = readFileSync(join(packageRoot, "site", "pages", "home.md"), "utf8");
 	const readme = readFileSync(join(packageRoot, "README.md"), "utf8");
 	const filepress = readFileSync(join(packageRoot, "site", "filepress.config.ts"), "utf8");
-	assert.match(home, /title: Find the sentence that means something else when the stress moves\./);
+	assert.match(home, /title: "Catch the other meaning in your sentence\."/);
 	assert.match(home, /checks stress and scope only/);
 	for (const text of [home, readme]) {
 		assert.doesNotMatch(text, /interpret differently from what you\s+intend/);
