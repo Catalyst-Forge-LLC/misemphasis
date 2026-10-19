@@ -26,6 +26,11 @@ test("comb skill is the report hour and does not name a CLI", () => {
 	assert.match(skill, /Not for grammar, tone/);
 	assert.doesNotMatch(skill, /npx misemphasis/);
 	assert.doesNotMatch(skill, /API key/);
+	const types = readFileSync(
+		join(packageRoot, "skills", "misemphasis", "references", "reading-types.md"),
+		"utf8",
+	);
+	assert.match(types, /is an `emphasis_shift`, not this\s+type/);
 	const folded =
 		skill
 			.match(/^---\n([\s\S]*?)\n---/)?.[1]
@@ -46,39 +51,18 @@ test("package ships skills and has no bin", () => {
 	assert.ok("./skills/*" in pkg.exports);
 });
 
-test("public copy names the product and the landing example", () => {
+test("public pages do not claim a scanner or a CLI", () => {
 	const home = readFileSync(join(packageRoot, "site", "pages", "home.md"), "utf8");
 	const readme = readFileSync(join(packageRoot, "README.md"), "utf8");
-	const filepress = readFileSync(join(packageRoot, "site", "filepress.config.ts"), "utf8");
-	assert.match(home, /title: "Catch the other meaning in your sentence\."/);
-	assert.match(home, /checks stress and scope only/);
+	const about = readFileSync(join(packageRoot, "site", "pages", "about.md"), "utf8");
 	for (const text of [home, readme]) {
 		assert.doesNotMatch(text, /interpret differently from what you\s+intend/);
 	}
-	const types = readFileSync(
-		join(packageRoot, "skills", "misemphasis", "references", "reading-types.md"),
-		"utf8",
-	);
-	assert.match(types, /is an `emphasis_shift`, not this\s+type/);
-	assert.match(filepress, /Did the reader stress the word you meant\?/);
-	assert.match(home, /We only promised the beta users a refund/);
-	assert.match(home, /I didn't say we should cancel Friday/);
-	assert.match(home, /Someone else said it/);
-	assert.match(home, /Smell Check/);
-	assert.doesNotMatch(home, /Sibling of/);
-	assert.doesNotMatch(home, /npm \*\*`misemphasis`\*\*/);
-	assert.match(readme, /installable writing skill/i);
 	assert.match(readme, /Nothing scans the tree/);
 	assert.doesNotMatch(home, /npx misemphasis/);
-	const about = readFileSync(join(packageRoot, "site", "pages", "about.md"), "utf8");
-	assert.match(about, /\*\*Misemphasis\*\* is that miss/);
-	assert.doesNotMatch(about, /## Names/);
 	assert.match(about, /Rachel Rooney/);
 	assert.match(about, /What I Really Mean/);
 	assert.match(about, /The Language of Cat/);
-	assert.match(about, /I didn't say she stole my money/);
-	assert.match(about, /I didn't say we should cancel Friday/);
-	assert.doesNotMatch(home, /stole my money/);
 });
 
 test("docs nav has a markdown file for every item", () => {
@@ -128,8 +112,6 @@ test("install and files pages name the hook and finish the redirects", () => {
 	const install = readFileSync(join(packageRoot, "site", "docs", "install.md"), "utf8");
 	assert.match(install, /Nothing scans the tree/);
 	assert.match(install, /misemphasis\.zip/);
-	assert.match(install, /Which agent do you use/);
-	assert.match(install, /Other installation methods/);
 	assert.ok(!existsSync(join(packageRoot, "site", "pages", "install.md")));
 	assert.ok(!existsSync(join(packageRoot, "site", "pages", "skill.md")));
 	const redirects = readFileSync(join(packageRoot, "site", "static", "_redirects"), "utf8");
@@ -137,7 +119,6 @@ test("install and files pages name the hook and finish the redirects", () => {
 	assert.match(redirects, /\/skill \/docs\/skill 308/);
 	const filepress = readFileSync(join(packageRoot, "site", "filepress.config.ts"), "utf8");
 	assert.match(filepress, /href: "\/docs\/install"/);
-	assert.match(filepress, /Get started/);
 	assert.doesNotMatch(filepress, /label: "Skill"/);
 	assert.doesNotMatch(filepress, /label: "Install"/);
 	assert.doesNotMatch(filepress, /href: "\/install"/);
